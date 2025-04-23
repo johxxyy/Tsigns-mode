@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>tsigns Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="tsigns Logo" class="logo" />
+        <h1>tsigns – Hoodie & T-Shirt Designer</h1>
+        <div class="controls">
+            <label for="product">Produkt:</label>
+            <select id="product">
+                <option value="tshirt">T-Shirt</option>
+                <option value="hoodie">Hoodie</option>
+            </select>
+
+            <label for="colorPicker">Farbe:</label>
+            <input type="color" id="colorPicker" value="#808080">
+
+            <label for="designUpload">Design hochladen:</label>
+            <input type="file" id="designUpload" accept="image/*">
+        </div>
+        <div class="preview">
+            <canvas id="designerCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
